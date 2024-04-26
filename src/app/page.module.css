@@ -1,0 +1,14 @@
+
+@media screen and (max-wdith: 780px){
+  .hamburger{
+    display: block;
+    cursor: pointer;
+  }
+  .description {
+    width: 20px;
+    height: 3px;
+    display: block;
+    left: -100%;
+
+  }
+}
