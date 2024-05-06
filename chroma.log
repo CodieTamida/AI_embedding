@@ -354,3 +354,56 @@ orjson.JSONDecodeError: Input is a zero-length, empty document: line 1 column 1 
 [32mINFO[0m:     [03-05-2024 15:26:44] ::1:49890 - "GET /api/v1/databases/default_database?tenant=default_tenant HTTP/1.1" 200
 [32mINFO[0m:     [03-05-2024 15:26:45] ::1:49904 - "GET /api/v1/tenants/default_tenant HTTP/1.1" 200
 [32mINFO[0m:     [03-05-2024 15:26:45] ::1:49904 - "GET /api/v1/databases/default_database?tenant=default_tenant HTTP/1.1" 200
+[32mINFO[0m:     [06-05-2024 01:56:15] Set chroma_server_nofile to 65535
+[32mINFO[0m:     [06-05-2024 01:56:15] Anonymized telemetry enabled. See                     https://docs.trychroma.com/telemetry for more information.
+[36mDEBUG[0m:    [06-05-2024 01:56:15] Starting component System
+[36mDEBUG[0m:    [06-05-2024 01:56:15] Starting component OpenTelemetryClient
+[36mDEBUG[0m:    [06-05-2024 01:56:15] Starting component SqliteDB
+[36mDEBUG[0m:    [06-05-2024 01:56:15] Starting component QuotaEnforcer
+[36mDEBUG[0m:    [06-05-2024 01:56:15] Starting component Posthog
+[36mDEBUG[0m:    [06-05-2024 01:56:15] Starting component LocalSegmentManager
+[36mDEBUG[0m:    [06-05-2024 01:56:15] Starting component SegmentAPI
+[32mINFO[0m:     [06-05-2024 01:56:15] Started server process [[36m1742[0m]
+[32mINFO[0m:     [06-05-2024 01:56:15] Waiting for application startup.
+[32mINFO[0m:     [06-05-2024 01:56:15] Application startup complete.
+[32mINFO[0m:     [06-05-2024 01:56:15] Uvicorn running on [1mhttp://localhost:8000[0m (Press CTRL+C to quit)
+[32mINFO[0m:     [06-05-2024 01:56:23] ::1:49675 - "GET /api/v1/tenants/default_tenant HTTP/1.1" 200
+[32mINFO[0m:     [06-05-2024 01:56:23] ::1:49675 - "GET /api/v1/databases/default_database?tenant=default_tenant HTTP/1.1" 200
+[32mINFO[0m:     [06-05-2024 01:56:25] ::1:49680 - "GET /api/v1/tenants/default_tenant HTTP/1.1" 200
+[32mINFO[0m:     [06-05-2024 01:56:25] ::1:49680 - "GET /api/v1/databases/default_database?tenant=default_tenant HTTP/1.1" 200
+[32mINFO[0m:     [06-05-2024 01:56:27] ::1:49685 - "GET /api/v1/tenants/default_tenant HTTP/1.1" 200
+[32mINFO[0m:     [06-05-2024 01:56:27] ::1:49685 - "GET /api/v1/databases/default_database?tenant=default_tenant HTTP/1.1" 200
+[32mINFO[0m:     [06-05-2024 01:56:49] ::1:49698 - "GET /api/v1/tenants/default_tenant HTTP/1.1" 200
+[32mINFO[0m:     [06-05-2024 01:56:49] ::1:49698 - "GET /api/v1/databases/default_database?tenant=default_tenant HTTP/1.1" 200
+[32mINFO[0m:     [06-05-2024 01:56:50] ::1:49704 - "GET /api/v1/tenants/default_tenant HTTP/1.1" 200
+[32mINFO[0m:     [06-05-2024 01:56:50] ::1:49704 - "GET /api/v1/databases/default_database?tenant=default_tenant HTTP/1.1" 200
+[32mINFO[0m:     [06-05-2024 01:58:09] ::1:49814 - "GET /api/v1/tenants/default_tenant HTTP/1.1" 200
+[32mINFO[0m:     [06-05-2024 01:58:09] ::1:49814 - "GET /api/v1/databases/default_database?tenant=default_tenant HTTP/1.1" 200
+[32mINFO[0m:     [06-05-2024 01:58:11] ::1:49819 - "GET /api/v1/tenants/default_tenant HTTP/1.1" 200
+[32mINFO[0m:     [06-05-2024 01:58:11] ::1:49819 - "GET /api/v1/databases/default_database?tenant=default_tenant HTTP/1.1" 200
+[32mINFO[0m:     [06-05-2024 01:58:42] ::1:49839 - "GET /api/v1/tenants/default_tenant HTTP/1.1" 200
+[32mINFO[0m:     [06-05-2024 01:58:42] ::1:49839 - "GET /api/v1/databases/default_database?tenant=default_tenant HTTP/1.1" 200
+[32mINFO[0m:     [06-05-2024 01:58:44] ::1:49846 - "GET /api/v1/tenants/default_tenant HTTP/1.1" 200
+[32mINFO[0m:     [06-05-2024 01:58:44] ::1:49846 - "GET /api/v1/databases/default_database?tenant=default_tenant HTTP/1.1" 200
+[32mINFO[0m:     [06-05-2024 02:06:00] ::1:50021 - "GET /api/v1/tenants/default_tenant HTTP/1.1" 200
+[32mINFO[0m:     [06-05-2024 02:06:00] ::1:50021 - "GET /api/v1/databases/default_database?tenant=default_tenant HTTP/1.1" 200
+[32mINFO[0m:     [06-05-2024 02:06:02] ::1:50025 - "GET /api/v1/tenants/default_tenant HTTP/1.1" 200
+[32mINFO[0m:     [06-05-2024 02:06:02] ::1:50025 - "GET /api/v1/databases/default_database?tenant=default_tenant HTTP/1.1" 200
+[32mINFO[0m:     [06-05-2024 02:08:36] ::1:50058 - "GET /api/v1/tenants/default_tenant HTTP/1.1" 200
+[32mINFO[0m:     [06-05-2024 02:08:36] ::1:50058 - "GET /api/v1/databases/default_database?tenant=default_tenant HTTP/1.1" 200
+[32mINFO[0m:     [06-05-2024 02:08:37] ::1:50063 - "GET /api/v1/tenants/default_tenant HTTP/1.1" 200
+[32mINFO[0m:     [06-05-2024 02:08:37] ::1:50063 - "GET /api/v1/databases/default_database?tenant=default_tenant HTTP/1.1" 200
+[32mINFO[0m:     [06-05-2024 02:26:28] ::1:52513 - "GET /api/v1/tenants/default_tenant HTTP/1.1" 200
+[32mINFO[0m:     [06-05-2024 02:26:28] ::1:52513 - "GET /api/v1/databases/default_database?tenant=default_tenant HTTP/1.1" 200
+[32mINFO[0m:     [06-05-2024 02:26:42] ::1:52573 - "GET /api/v1/tenants/default_tenant HTTP/1.1" 200
+[32mINFO[0m:     [06-05-2024 02:26:42] ::1:52573 - "GET /api/v1/databases/default_database?tenant=default_tenant HTTP/1.1" 200
+[32mINFO[0m:     [06-05-2024 02:26:43] ::1:52587 - "GET /api/v1/tenants/default_tenant HTTP/1.1" 200
+[32mINFO[0m:     [06-05-2024 02:26:43] ::1:52587 - "GET /api/v1/databases/default_database?tenant=default_tenant HTTP/1.1" 200
+[32mINFO[0m:     [06-05-2024 02:30:18] ::1:53495 - "GET /api/v1/tenants/default_tenant HTTP/1.1" 200
+[32mINFO[0m:     [06-05-2024 02:30:18] ::1:53495 - "GET /api/v1/databases/default_database?tenant=default_tenant HTTP/1.1" 200
+[32mINFO[0m:     [06-05-2024 02:30:20] ::1:53508 - "GET /api/v1/tenants/default_tenant HTTP/1.1" 200
+[32mINFO[0m:     [06-05-2024 02:30:20] ::1:53508 - "GET /api/v1/databases/default_database?tenant=default_tenant HTTP/1.1" 200
+[32mINFO[0m:     [06-05-2024 02:58:24] ::1:60649 - "GET /api/v1/tenants/default_tenant HTTP/1.1" 200
+[32mINFO[0m:     [06-05-2024 02:58:24] ::1:60649 - "GET /api/v1/databases/default_database?tenant=default_tenant HTTP/1.1" 200
+[32mINFO[0m:     [06-05-2024 02:58:25] ::1:60659 - "GET /api/v1/tenants/default_tenant HTTP/1.1" 200
+[32mINFO[0m:     [06-05-2024 02:58:25] ::1:60659 - "GET /api/v1/databases/default_database?tenant=default_tenant HTTP/1.1" 200

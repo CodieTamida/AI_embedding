@@ -1,6 +1,8 @@
 from typing import Union
-from fastapi import FastAPI
+from fastapi import FastAPI, HTTPException
+from pydantic import BaseModel
 import uvicorn
+from fastapi.middleware.cors import CORSMiddleware
 
 import chromadb
 from llama_index.core import SimpleDirectoryReader
@@ -16,6 +18,17 @@ import os
 
 chroma_client = chromadb.HttpClient(host='localhost', port = 8000)
 app = FastAPI()
+
+app.add_middleware(
+    CORSMiddleware,
+    allow_origins=["http://localhost:3000"],
+    allow_credentials=True,
+    allow_methods=["*"],
+    allow_headers=["*"],
+)
+
+class Message(BaseModel):
+    content: str
 
 load_dotenv()
 OpenAI.api_key = os.getenv('API_KEY')
@@ -43,10 +56,14 @@ index = VectorStoreIndex.from_vector_store(
 query_engine = index.as_query_engine()
 response = query_engine.query("What book are you trained on?")
 
-@app.get("/About")
-def get_response(query: Union[str, None]):
+@app.post("/api/About")
+def get_response(message: Message):
+    if not message.content:
+        raise HTTPException(status_code = 400, details='No content in message')
+    print("Received message")
     query_engine = index.as_query_engine()
-    response = query_engine.query(query)
+    response = query_engine.query(message.content)
+    #print(response)
     return {"response":response}
 
 
