@@ -30,9 +30,11 @@ Lastly, run the Uvicorn server for FastAPI:
 ```python app.py```
 
 ## Files
-The app.py file contains the db connection and the FastAPI connection
-middleware.js redirects users who are not authenticated by GitHub login to the "Sign In" screen.
+The app.py file contains the db connection and the FastAPI connection and queries the vector index for quicker responses
+The middleware.js file redirects users who are not authenticated by GitHub login to the "Sign In" screen.
 The components folder has the files of react components used on the front-end, the nav bar and chat UI are components in this folder
+The auth.js file initializes the nextAuth providers to use and page.
+The data folder has a .pdf version of our class textbook and is used to train the model
 
 The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
 
