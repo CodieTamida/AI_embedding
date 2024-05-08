@@ -24,6 +24,7 @@ Doing this will make sure that you have all the necessary packages and dependenc
 
 Next, run the ChromaDB server:
 ```Chroma run```
+
 Lastly, run the Uvicorn server for FastAPI:
 
 ```python app.py```
