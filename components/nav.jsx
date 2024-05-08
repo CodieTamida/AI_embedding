@@ -36,7 +36,7 @@ const Navbar = () => {
             </li>
             <li onClick={removeActive}>
               <Link href="/About" className={`${styles.navlink}`}>
-                About
+                ChatBot
               </Link>
             </li>
             <li onClick={removeActive}>
